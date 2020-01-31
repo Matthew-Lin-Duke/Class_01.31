@@ -22,6 +22,14 @@ def new_feature():
     pass
 
 
+def fever_check(temp_list):
+    fever = False
+    for temperature in temp_list:
+        if temperature > 98.6:
+            fever = True
+    return fever
+
+
 def cholesterol_analysis():
     print("cholesterol_analysis")
     HDLinput = input("Enter test result: ")
